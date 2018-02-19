@@ -40,3 +40,10 @@ Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
 ### Adding Authentication
 
 * navigate to [Auth0](https://auth0.com/) and sign up
+*  Copy QuickStart Code
+*  Go to terminal install Packages 
+```
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet restore
+
+```
