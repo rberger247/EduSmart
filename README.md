@@ -36,3 +36,7 @@ Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
 </ItemGroup>
 
 ```
+
+### Adding Authentication
+
+* navigate to [Auth0](https://auth0.com/) and sign up
