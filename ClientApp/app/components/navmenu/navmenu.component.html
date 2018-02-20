@@ -12,6 +12,26 @@
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
             <ul class='nav navbar-nav'>
+                <li>
+                    <button class="btn btn-primary btn-margin"
+                            *ngIf="!auth.isAuthenticated();else other_content"
+                            (click)="auth.login()">
+                        <span class='glyphicon glyphicon-user'></span> Log In
+                    </button>
+              
+                    <ng-template #other_content>
+                        <a (click)="auth.logout()">
+                            <span class='glyphicon glyphicon-user'></span> Logout
+                        </a>
+
+
+
+                    </ng-template>
+
+                </li>
+                <!--<a (click)="auth.logout()" *ngIf="auth.isAuthenticated()">
+        <span class='glyphicon glyphicon-user'></span> Logout
+    </a>-->
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/home']">
                         <span class='glyphicon glyphicon-home'></span> Home
