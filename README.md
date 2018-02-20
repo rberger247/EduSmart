@@ -47,7 +47,7 @@ dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 dotnet restore
 
 ```
-inject authService in navMenuComponent.ts
+* Inject authService in navMenuComponent.ts
 ```
   constructor(private auth: AuthService) { }
   ```
