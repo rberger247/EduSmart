@@ -19,6 +19,16 @@ npm Install
 
 ### Working With Entity Framework in  .Net core 2.0
 
+
+* install these three packages by typing into nugetPackage console:
+
+```
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
+```
+
+* [Here are the steps you must follow](https://docs.microsoft.com/en-us/ef/core/get-started/aspnetcore/existing-db)
 * add the following to .csProj file
 ```
 <ItemGroup>
@@ -26,3 +36,18 @@ npm Install
 </ItemGroup>
 
 ```
+
+### Adding Authentication with  auth0
+
+* navigate to [Auth0](https://auth0.com/) and sign up
+*  Copy QuickStart Code
+*  Go to terminal install Packages 
+```
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet restore
+
+```
+* Inject authService in navMenuComponent.ts
+```
+  constructor(private auth: AuthService) { }
+  ```
