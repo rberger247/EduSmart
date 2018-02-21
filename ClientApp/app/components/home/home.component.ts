@@ -7,5 +7,5 @@ import { AuthService } from '../../Services/auth.service';
     providers: [AuthService]
 })
 export class HomeComponent {
-    constructor(private auth: AuthService) { }
+    constructor(public auth: AuthService) { }
 }
