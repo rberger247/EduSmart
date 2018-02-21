@@ -64,6 +64,7 @@
     "@types/auth0-js": "^8.11.2",
     "auth0-js": "^9.2.3",
     "enhanced-resolve": "3.3.0",
+    "es6-promise": "^4.2.4",
     "webpack-sources": "^1.1.0"
   }
 }
